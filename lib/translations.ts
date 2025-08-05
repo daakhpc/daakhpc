@@ -15,9 +15,9 @@ export const translations = {
     whyChooseHom: 'Why Choose Homeopathy?',
     naturalHealing: 'Natural Healing',
     holisticApproach: 'Holistic Approach',
-    careerScope: 'Career Scope',
-    growingDemand: 'Growing Demand',
-    fulfillingCareer: 'Fulfilling Career',
+    careerScope: 'Excellent Career Scope',
+    growingDemand: 'Growing Industry Demand',
+    fulfillingCareer: 'A Fulfilling Career Path',
     courseOffered: 'Course Offered',
     dhp: 'Diploma in Homeopathic Pharmacy (DHP)',
     duration: 'Duration: 2 years',
@@ -28,6 +28,15 @@ export const translations = {
     examFeeExtra: 'Exam fee extra as per board norms',
     recognition: 'Recognition',
     recognitionDetail: 'Recognized by Homeopathic Medicine Board, Lucknow, UP',
+    latestNoticesHome: 'Latest News & Notices',
+    viewAllNotices: 'View All Notices',
+    careerInHomPharmacy: 'A Career in Homeopathic Pharmacy',
+    careerIntro: 'A Diploma in Homeopathic Pharmacy (DHP) opens doors to a rewarding career in a rapidly growing healthcare sector. Our graduates are equipped with the skills to excel in various roles.',
+    careerProspects: 'Career Prospects',
+    homPharmacist: 'Homeopathic Pharmacist in clinics and hospitals.',
+    retailDispensary: 'Start your own retail homeopathic dispensary.',
+    manufacturingUnits: 'Work in homeopathic medicine manufacturing units.',
+    qualityControl: 'Quality control and research in pharma companies.',
     // Contact Page & Form
     getInTouch: 'Get in Touch',
     ourLocation: 'Our Location',
@@ -36,6 +45,7 @@ export const translations = {
     contactForm: 'Contact Form',
     yourName: 'Your Name',
     yourEmail: 'Your Email',
+    yourPhone: 'Your Phone (Optional)',
     yourMessage: 'Your Message',
     sendMessage: 'Send Message',
     // Admission Enquiry Form
@@ -54,7 +64,8 @@ export const translations = {
     latestNotices: 'Latest Notices & Updates',
     date: 'Date',
     description: 'Description',
-    download: 'Download',
+    download: 'Download PDF',
+    viewImage: 'View Image',
     // Footer
     visitorCount: 'Visitor Count',
     // Floating Buttons
@@ -81,8 +92,17 @@ export const translations = {
     noEnquiries: 'No admission enquiries yet.',
     noMessages: 'No contact messages yet.',
     noNotices: 'No notices found.',
-    noStaff: 'No staff profiles found.'
-
+    noStaff: 'No staff profiles found.',
+    editNotice: 'Edit Notice',
+    addNotice: 'Add New Notice',
+    editStaff: 'Edit Staff',
+    addStaff: 'Add New Staff',
+    fileType: 'File Type',
+    fileUrl: 'File URL (for PDF/Image)',
+    text: 'Text',
+    pdf: 'PDF',
+    image: 'Image',
+    
   },
   hi: {
     // Header & Nav
@@ -99,9 +119,9 @@ export const translations = {
     whyChooseHom: 'होम्योपैथी क्यों चुनें?',
     naturalHealing: 'प्राकृतिक उपचार',
     holisticApproach: 'समग्र दृष्टिकोण',
-    careerScope: 'कैरियर स्कोप',
-    growingDemand: 'बढ़ती मांग',
-    fulfillingCareer: 'सार्थक कैरियर',
+    careerScope: 'उत्कृष्ट कैरियर स्कोप',
+    growingDemand: 'बढ़ती उद्योग मांग',
+    fulfillingCareer: 'एक सार्थक कैरियर पथ',
     courseOffered: 'प्रस्तावित कोर्स',
     dhp: 'डिप्लोमा इन होम्योपैथिक फार्मेसी (डी.एच.पी.)',
     duration: 'अवधि: 2 वर्ष',
@@ -112,6 +132,15 @@ export const translations = {
     examFeeExtra: 'परीक्षा शुल्क बोर्ड के नियमानुसार अतिरिक्त',
     recognition: 'मान्यता',
     recognitionDetail: 'होम्योपैथिक मेडिसिन बोर्ड, लखनऊ, उ.प्र. द्वारा मान्यता प्राप्त',
+    latestNoticesHome: 'नवीनतम समाचार और सूचनाएं',
+    viewAllNotices: 'सभी सूचनाएं देखें',
+    careerInHomPharmacy: 'होम्योपैथिक फार्मेसी में करियर',
+    careerIntro: 'होम्योपैथिक फार्मेसी में डिप्लोमा (डी.एच.पी.) तेजी से बढ़ते स्वास्थ्य सेवा क्षेत्र में एक पुरस्कृत करियर के द्वार खोलता है। हमारे स्नातक विभिन्न भूमिकाओं में उत्कृष्टता प्राप्त करने के लिए कौशल से लैस हैं।',
+    careerProspects: 'कैरियर की संभावनाएं',
+    homPharmacist: 'क्लीनिक और अस्पतालों में होम्योपैथिक फार्मासिस्ट।',
+    retailDispensary: 'अपनी खुद की खुदरा होम्योपैथिक डिस्पेंसरी शुरू करें।',
+    manufacturingUnits: 'होम्योपैथिक दवा निर्माण इकाइयों में काम करें।',
+    qualityControl: 'फार्मा कंपनियों में गुणवत्ता नियंत्रण और अनुसंधान।',
     // Contact Page & Form
     getInTouch: 'संपर्क में रहें',
     ourLocation: 'हमारा पता',
@@ -120,6 +149,7 @@ export const translations = {
     contactForm: 'संपर्क फ़ॉर्म',
     yourName: 'आपका नाम',
     yourEmail: 'आपका ईमेल',
+    yourPhone: 'आपका फ़ोन (वैकल्पिक)',
     yourMessage: 'आपका संदेश',
     sendMessage: 'संदेश भेजें',
     // Admission Enquiry Form
@@ -138,7 +168,8 @@ export const translations = {
     latestNotices: 'नवीनतम सूचनाएं और अपडेट',
     date: 'दिनांक',
     description: 'विवरण',
-    download: 'डाउनलोड',
+    download: 'पीडीएफ डाउनलोड करें',
+    viewImage: 'छवि देखें',
     // Footer
     visitorCount: 'आगंतुक गणना',
     // Floating Buttons
@@ -165,6 +196,15 @@ export const translations = {
     noEnquiries: 'अभी तक कोई प्रवेश पूछताछ नहीं हुई है।',
     noMessages: 'अभी तक कोई संपर्क संदेश नहीं है।',
     noNotices: 'कोई सूचना नहीं मिली।',
-    noStaff: 'कोई स्टाफ प्रोफाइल नहीं मिला।'
+    noStaff: 'कोई स्टाफ प्रोफाइल नहीं मिला।',
+    editNotice: 'सूचना संपादित करें',
+    addNotice: 'नई सूचना जोड़ें',
+    editStaff: 'स्टाफ संपादित करें',
+    addStaff: 'नया स्टाफ जोड़ें',
+    fileType: 'फ़ाइल प्रकार',
+    fileUrl: 'फ़ाइल यूआरएल (पीडीएफ/छवि के लिए)',
+    text: 'टेक्स्ट',
+    pdf: 'पीडीएफ',
+    image: 'छवि',
   }
 };

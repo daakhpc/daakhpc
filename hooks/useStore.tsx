@@ -32,7 +32,13 @@ interface StoreState {
 const StoreContext = createContext<StoreState | undefined>(undefined);
 
 const initialNotices: Notice[] = [
-    { id: '1', title: 'Orientation for Batch 2025', date: new Date().toLocaleDateString('en-CA'), description: 'Orientation program will be held on July 10, at 10:00 AM in the college auditorium.' }
+    { 
+        id: '1', 
+        title: 'Orientation for Batch 2025', 
+        date: new Date().toLocaleDateString('en-CA'), 
+        description: 'Orientation program will be held on July 10, at 10:00 AM in the college auditorium.',
+        fileType: 'text'
+    }
 ];
 
 const initialStaff: Staff[] = [
@@ -45,7 +51,7 @@ const initialEnquiries: AdmissionEnquiry[] = [
 ];
 
 const initialMessages: ContactMessage[] = [
-    { id: '1', name: 'Neha Gupta', email: 'neha@example.com', message: 'I have a query about the admission process.', submittedAt: new Date().toISOString() }
+    { id: '1', name: 'Neha Gupta', email: 'neha@example.com', phone: '9876543211', message: 'I have a query about the admission process.', submittedAt: new Date().toISOString() }
 ];
 
 export const StoreProvider = ({ children }: { children: ReactNode }) => {
@@ -70,7 +76,7 @@ export const StoreProvider = ({ children }: { children: ReactNode }) => {
             const newNotice: Notice = { ...notice, id: Date.now().toString(), date: new Date().toLocaleDateString('en-CA') };
             setNotices(prev => [newNotice, ...prev]);
         },
-        updateNotice: (updated) => setNotices(prev => prev.map(n => n.id === updated.id ? updated : n)),
+        updateNotice: (updated) => setNotices(prev => prev.map(n => n.id === updated.id ? { ...updated, date: n.date } : n)),
         deleteNotice: (id) => setNotices(prev => prev.filter(n => n.id !== id)),
         staff,
         addStaff: (s) => {

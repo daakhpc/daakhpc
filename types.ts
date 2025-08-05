@@ -4,6 +4,7 @@ export interface Notice {
   title: string;
   date: string;
   description: string;
+  fileType: 'text' | 'pdf' | 'image';
   fileUrl?: string;
 }
 
@@ -17,7 +18,7 @@ export interface Staff {
 }
 
 export interface AdmissionEnquiry {
-  id: string;
+  id:string;
   name: string;
   phone: string;
   email: string;
@@ -31,6 +32,7 @@ export interface ContactMessage {
   id: string;
   name: string;
   email: string;
+  phone?: string;
   message: string;
   submittedAt: string;
 }

@@ -18,7 +18,7 @@ const AppContent: React.FC = () => {
     const isAdminRoute = location.pathname.startsWith('/admin');
 
     return (
-        <div className="flex flex-col min-h-screen font-sans">
+        <div className="flex flex-col min-h-screen" style={{ fontFamily: "'Inter', sans-serif" }}>
             {!isAdminRoute && <Header />}
             <main className="flex-grow">
                 <Routes>
